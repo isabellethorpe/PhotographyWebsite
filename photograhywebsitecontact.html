@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<HTML>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography Website">
+  <meta name="keywords" content="Photography, Fine Art, Abstract, Science, Exhibition">
+  <meta name="author" content="Isabelle Thorpe">
+  <meta name="description" content="contact form example">
+
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="photographywebsite.js"></script>
+  <!-- Latest compiled and minified CSS and customised CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="photographywebsite.css">
+  <title>
+    Photography Website
+  </title>
+</head>
+
+<body>
+
+  <!-- Nav Bar including Logo, Works, Contact. Includes all href links to other webpages -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="photographywebsite.html"><span class="sr-only">(current)</span><img class="mylogo"
+        src="logo image/layer1.png" /><img class="mylogo2" src="logo image/layer2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="photographywebsite.html" id="navbarDropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORKS</a>
+          <div class="dropdown-menu dropdown-menu-centre" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="photographywebsiteworks1.html">PHOTON</a>
+            <a class="dropdown-item" href="photographywebsiteworks2.html">MAGNETISM</a>
+            <a class="dropdown-item" href="photographywebsiteworks3.html">MICROMAN</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photographywebsiteabout.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photograhywebsitecontact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <!-- Form -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text-center">
+          <div class="col-6 offset-3">
+
+            <!-- Gmail form -->
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="izzymthorpe@gmail.com"
+              action="https://script.google.com/macros/s/AKfycbxoktY48K9Vqy3A7HBqRdVfw1VVJn_qofIWlKMG/exec">
+
+              <!-- Name, Message and Email -->
+              <div class="form-elements">
+                <fieldset class="pure-group">
+                  <label for="Enquiry" class="formtext">For any questions about prints or colloboration -</br>
+                    Please use the Contact Form
+                    below:</label>
+
+                  </br>
+
+                  <!--<div class="form-elements">-->
+                  <fieldset class="pure-group">
+                    <label for="name" class="formtext">Name:</label>
+                    <input id="name" name="name" class="commentbox" placeholder="" />
+                  </fieldset>
+
+                  <fieldset class="pure-group">
+                    <label for="message" class="formtext">Message: </label>
+                    <textarea class="commentbox" id="message" name="message" rows="4" placeholder=""></textarea>
+                  </fieldset>
+
+                  <fieldset class="pure-group">
+                    <label for="email" class="formtext"><em>Your </em> Email Address:</label>
+                    <input id="email" name="email" type="email" value="" class="commentbox" required
+                      placeholder="your.name@email.com" />
+                  </fieldset>
+
+                  <!-- Send button -->
+                  <button class="button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+              </div>
+
+              <br>
+              <br>
+              <br>
+
+              <!-- Thank you message -->
+              <div style="display:none" class="thankyou_message">
+                <h2>Thanks for getting in touch.
+                </h2>
+            </form>
+
+            <!-- Date underneath form - only shows when form submitted -->
+            <script>
+              var currentDate = new Date(),
+                day = currentDate.getDate(),
+                month = currentDate.getMonth() + 1,
+                year = currentDate.getFullYear();
+              document.write(day + "/" + month + "/" + year)</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+  <br>
+
+</body>
+
+</HTML>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<HTML>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography Website">
+  <meta name="keywords" content="Photography, Fine Art, Abstract, Science, Exhibition">
+  <meta name="author" content="Isabelle Thorpe">
+  <!-- jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="photographywebsite.js" defer></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="photographywebsite.css">
+  <title>
+    Photography Website
+  </title>
+</head>
+
+<body>
+  <!-- Nav Bar including Logo, Work, Contact -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="photographywebsite.html"><span class="sr-only">(current)</span><img class="mylogo"
+        src="logo image/layer1.png" /><img class="mylogo2" src="logo image/layer2.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">WORKS</a>
+          <div class="dropdown-menu dropdown-menu-centre" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="photographywebsiteworks1.html">PHOTON</a>
+            <a class="dropdown-item" href="photographywebsiteworks2.html">MAGNETISM</a>
+            <a class="dropdown-item" href="photographywebsiteworks3.html">MICROMAN</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photographywebsiteabout.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photograhywebsitecontact.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  </br>
+
+  <!-- Gallery -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <!-- Column 1 -->
+        <img id="myImg" src="magnetism/1.jpeg" alt="Image 1" class="w-100 shadow-1-strong rounded mb-4" alt=""
+          style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+
+        <img id="myImg" src="magnetism/2.jpeg" alt="Image 2" class="w-100 shadow-1-strong rounded mb-4" alt=""
+          style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+
+        <img id="myImg" src="magnetism/3.jpeg" alt="Image 3" class="w-100 shadow-1-strong rounded mb-4" alt=""
+          style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="magnetism/4.jpeg" alt="Image 4" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+
+        <img src="magnetism/5.jpeg" alt="Image 5" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(5)" class="hover-shadow cursor" />
+
+        <img src="magnetism/9.jpeg" alt="Image 6" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(6)" class="hover-shadow cursor" />
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img src="magnetism/7.jpeg" alt="Image 7" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(7)" class="hover-shadow cursor" />
+
+        <img src="magnetism/8.jpeg" alt="Image 8" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(8)" class="hover-shadow cursor" />
+
+        <img src="magnetism/6.jpeg" alt="Image 9" class="w-100 shadow-1-strong rounded mb-4" alt="" style="width:100%"
+          onclick="openModal();currentSlide(9)" class="hover-shadow cursor" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="magnetism/1.jpeg" alt="Image 1" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="magnetism/2.jpeg" alt="Image 2" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="magnetism/3.jpeg" alt="Image 3" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="magnetism/4.jpeg" alt="Image 4" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="magnetism/5.jpeg" alt="Image 5" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="magnetism/9.jpeg" alt="Image 6" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="magnetism/7.jpeg" alt="Image 7" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="magnetism/8.jpeg" alt="Image 8" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="magnetism/6.jpeg" alt="Image 9" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+</body>
+
+</HTML>
